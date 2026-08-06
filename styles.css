@@ -1616,10 +1616,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 420px;
-  width: 360px;
-  margin-left: 80px;
-  transform: rotate(2deg);
+  height: 400px;
+  width: 300px;
+  margin-right:1px;
+  transform: rotate(3deg);
+  margin-top: 50px;
 }
 
 .status-badge{
@@ -1640,6 +1641,7 @@ max-width: 100%;
 .hero-details .main-text{
   font-size: var(--font-size-xl);
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .hero-details .description{
