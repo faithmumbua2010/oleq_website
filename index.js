@@ -3,25 +3,27 @@ const closeButton = document.getElementById("close-button");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 
-openButton.addEventListener("click", () => {
-  navMenu.classList.add("active");
-  openButton.style.display = "none";
-  closeButton.style.display = "flex";
-});
+if (openButton && closeButton && navMenu) {
+  openButton.addEventListener("click", () => {
+    navMenu.classList.add("active");
+    openButton.style.display = "none";
+    closeButton.style.display = "flex";
+  });
 
-closeButton.addEventListener("click", () => {
-  navMenu.classList.remove("active");
-  closeButton.style.display = "none";
-  openButton.style.display = "flex";
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  closeButton.addEventListener("click", () => {
     navMenu.classList.remove("active");
     closeButton.style.display = "none";
     openButton.style.display = "flex";
   });
-});
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      closeButton.style.display = "none";
+      openButton.style.display = "flex";
+    });
+  });
+}
 
 const header = document.querySelector("header");
 const contactBtn = document.querySelector(".contact-btn");

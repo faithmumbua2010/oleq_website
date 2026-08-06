@@ -786,18 +786,15 @@ header .navbar {
   display: flex;
   justify-content: center;
   text-align: left;
+   background: #0c1527;
+  color: var(--white-color);
 }
 
 .about-section-container {
   max-width: 700px;
 }
 
-.cont-btn {
-  background: var(--gradient-accent);
-  padding: 10px;
-  color: var(--white-color);
-  border-radius: var(--border-radius-s);
-}
+
 
 .about-section-container h1 {
   font-size: var(--font-size-xxl);
