@@ -245,6 +245,19 @@ header .navbar {
   white-space: nowrap;
 }
 
+.status-dot i {
+  animation: status-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
 /*Services section*/
 .services {
   padding-top: 6rem;
