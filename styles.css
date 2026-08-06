@@ -1619,8 +1619,8 @@ header {
   height: 400px;
   width: 340px;
   margin-right:1px;
-  transform: rotate(3deg);
-  transform-origin: left  center;
+  transform: rotate(2deg);
+  margin-left: 80px;
   margin-top: 50px;
 }
 
